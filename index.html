@@ -1,0 +1,57 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <title>BlogX</title>
+    <link href="style.css" rel="stylesheet"/>
+    <!-- <script src="https://unpkg.com/vue"></script> -->
+    <script src="https://unpkg.com/vue@2.5.17/dist/vue.js"></script>
+</head>
+<body>
+
+    <div id="vue-app">
+
+        <h1>{{newsFeed('Morning')}}</h1>
+        <h1>{{ name}}</h1>
+        <h2>{{ age}}</h2>
+        <h3>{{ college}}</h3>
+        <h4>{{ degree}}</h4>
+        <h4>{{ skills}}</h4>
+        <p v-html="website"></p>
+        <button v-on:click="addPoints(1)">Add points</button>
+        <button v-on:click="subPoints(1)">Subract points</button>
+        <button v-on:dblclick="addPoints(100)">Boost points</button>
+        <button v-on:dblclick="subPoints(100)">Boost Decrease points</button>
+    
+        <button v-on:click="a++">Add points</button>
+        <button v-on:click="b++">Subract points</button>
+
+        <h1>  {{name}}</h1>
+        <p>My credit points is {{points}}</p>
+        <p>My credit points A- {{a}}</p>
+        <p>My credit points B- {{b}}</p>
+
+        <p>My credit points + A= {{addtoA}}</p>
+        <p>My credit points + B ={{addtoB}}</p>
+
+
+
+
+    </div>
+
+
+    <div id="fullshade">
+            <h1>  {{namee}}</h1>
+            <h1>  {{skillss}}</h1>
+
+
+        <input type="text" v-model="namee"/> 
+        <input type="text" v-model="skillss"/> 
+
+
+    </div>
+    <script src="app.js"></script>
+
+
+</body>
+</html>
